@@ -39,7 +39,7 @@ v_model = vmap(model, (None, 0))
 # solution
 @jit
 def u_star(x):
-    return jnp.product(jnp.sin(jnp.pi * x))
+    return jnp.prod(jnp.sin(jnp.pi * x))
 
 # rhs
 @jit
